@@ -1,0 +1,16 @@
+Source: php-cakephp-core
+Section: php
+Priority: optional
+Maintainer: CyberVitexus <cybervitexus@gmail.com>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://cakephp.org
+Vcs-Git: https://github.com/Vitexus/php-cackephp-core.git
+Rules-Requires-Root: no
+
+Package: php-cakephp-core
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer, php-cakephp-utility, php-psr-container, php-league-container
+Description: CakePHP Framework Core classes
+ CakePHP Core provides the core classes for the CakePHP framework,
+ including configuration, plugins, containers, and base interfaces.
